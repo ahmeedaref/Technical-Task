@@ -31,4 +31,12 @@ export class ProductService {
   async findAllProduct(): Promise<productDocument[]> {
     return this.productModel.find();
   }
+
+  async findOneProduct(id: string) {
+    const product = await this.productModel.findById(id);
+    if (!product) {
+      throw new BadRequestException('product not found');
+    }
+    return product;
+  }
 }

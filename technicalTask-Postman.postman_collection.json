@@ -110,6 +110,26 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "getOneProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/product/6755e8abc9b25ef60475c8f6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"6755e8abc9b25ef60475c8f6"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

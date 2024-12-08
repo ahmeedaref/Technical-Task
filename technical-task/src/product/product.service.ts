@@ -5,7 +5,7 @@ import { productDocument } from 'src/schemas/product-schema';
 import { Model } from 'mongoose';
 import { AuthService } from 'src/auth/auth.service';
 import { UserDocument } from 'src/schemas/users-schema';
-
+import { UpdateProductDto } from './dtos/update-product-dtos';
 @Injectable()
 export class ProductService {
   constructor(
@@ -46,5 +46,19 @@ export class ProductService {
       throw new BadRequestException('product not found');
     }
     return { message: 'deleted product ' };
+  }
+
+  async UpdateProduct(id: string, data: Partial<UpdateProductDto>) {
+    const product = await this.productModel.findByIdAndUpdate(
+      { _id: id },
+      data,
+      { next: true },
+    );
+
+    if (!product) {
+      throw new BadRequestException('product not found');
+    }
+
+    return this.productModel.findOne();
   }
 }

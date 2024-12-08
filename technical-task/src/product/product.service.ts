@@ -59,6 +59,6 @@ export class ProductService {
       throw new BadRequestException('product not found');
     }
 
-    return this.productModel.findOne();
+    return this.productModel.findById(id);
   }
 }

@@ -1,11 +1,13 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
-import { CreateUserDto } from './dtos/create-users';
+import { UserDto } from './dtos/create-users';
 import { UserDocument } from 'src/schemas/users-schema';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import * as bcrypt from 'bcryptjs';
 import { JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
+import { RefUserDto } from './dtos/ref.users.dto';
+import { User } from '../schemas/users-schema';
 @Injectable()
 export class AuthService {
   constructor(
@@ -14,7 +16,7 @@ export class AuthService {
     private configService: ConfigService,
   ) {}
 
-  async register(dataDto: CreateUserDto) {
+  async register(dataDto: UserDto) {
     try {
       const { email } = dataDto;
       const user = await this.UserModel.findOne({ email });
@@ -30,7 +32,7 @@ export class AuthService {
     }
   }
 
-  async login(data: CreateUserDto) {
+  async login(data: UserDto) {
     const { email } = data;
     const user = await this.UserModel.findOne({ email });
     if (!user) {

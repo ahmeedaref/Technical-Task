@@ -1,11 +1,11 @@
-import { Schema, Document, model } from 'mongoose';
+import { Schema, Document, model, Types } from 'mongoose';
 import { User } from './users-schema';
 export interface productDocument extends Document {
   name: string;
   price: number;
   description: string;
   category: string;
-  createdBy: string;
+  createdBy: Types.ObjectId;
 }
 
 export const ProductSchema = new Schema<productDocument>({
@@ -13,7 +13,7 @@ export const ProductSchema = new Schema<productDocument>({
   price: { type: Number, required: true },
   description: { type: String },
   category: { type: String },
-  createdBy: { type: String, ref: User },
+  createdBy: { type: Schema.Types.ObjectId, ref: 'User', required: true },
 });
 
 export const Product = model<productDocument>('Product', ProductSchema);

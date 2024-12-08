@@ -11,5 +11,5 @@ export class ProductDto {
   @IsString()
   category?: string;
   @IsString()
-  createdBy?: string;
+  createdBy: string;
 }

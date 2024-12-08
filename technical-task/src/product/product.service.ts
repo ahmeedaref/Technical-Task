@@ -16,11 +16,16 @@ export class ProductService {
 
   async create(data: ProductDto) {
     try {
+      const user = await this.userModel.findById(data.createdBy);
+      if (!user) {
+        throw new BadRequestException('User not found');
+      }
       const { name } = data;
       const product = await this.productModel.findOne({ name });
       if (product) {
         throw new BadRequestException('product is already exists');
       }
+
       const Prod = new this.productModel(data);
       return Prod.save();
     } catch (err) {

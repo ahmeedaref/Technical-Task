@@ -29,14 +29,6 @@ export class AuthService {
       throw new BadRequestException(err);
     }
   }
-  async findUser(data: CreateUserDto) {
-    const { email } = data;
-    const user = await this.UserModel.findOne({ email });
-    if (!user) {
-      throw new BadRequestException('email not found');
-    }
-    return user;
-  }
 
   async login(data: CreateUserDto) {
     const { email } = data;

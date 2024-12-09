@@ -71,13 +71,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTViZTQxODhhN2EyNDcxMTNjZmZiNSIsImVtYWlsIjoiYWhtZWRAZ21haWwuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzMzNzAwNjU0LCJleHAiOjE3MzM3MDQyNTR9.kYIBzaNb6s6aVflxwUljqmfNCufobkZ1obQikrFrkos",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTViZTQxODhhN2EyNDcxMTNjZmZiNSIsImVtYWlsIjoiYWhtZWRAZ21haWwuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzMzNzU4OTA0LCJleHAiOjE3MzM3NjI1MDR9.hri-_oyAYcdxDiPgABLra1cabonVVm1I9DZrWImGaDY",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"t-shrit black \",\r\n    \"description\":\"t-shrit black ooersive\",\r\n    \"category\":\"t8\",\r\n    \"price\":900,\r\n    \"createdBy\":\"6755be4188a7a247113cffb5\"\r\n   \r\n}",
+					"raw": "{\r\n    \"name\":\"labtop hb  \",\r\n    \"description\":\"ram 16 265 ssd ic 7\",\r\n    \"category\":\"g6\",\r\n    \"price\":20000,\r\n    \"createdBy\":\"6755be4188a7a247113cffb5\"\r\n   \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

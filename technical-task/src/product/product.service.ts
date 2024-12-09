@@ -27,7 +27,9 @@ export class ProductService {
       }
 
       const Prod = new this.productModel(data);
-      return Prod.save();
+      await Prod.save();
+
+      return this.productModel.findById(Prod._id).populate('createdBy').exec();
     } catch (err) {
       throw new BadRequestException(err);
     }

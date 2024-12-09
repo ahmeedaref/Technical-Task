@@ -6,7 +6,6 @@ import { InjectModel } from '@nestjs/mongoose';
 import * as bcrypt from 'bcryptjs';
 import { JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
-import { RefUserDto } from './dtos/ref.users.dto';
 import { User } from '../schemas/users-schema';
 @Injectable()
 export class AuthService {

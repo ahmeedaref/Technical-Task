@@ -9,4 +9,6 @@ export class UpdateProductDto {
   decription?: string;
   @IsString()
   category?: string;
+  @IsString()
+  createdBy?: string;
 }

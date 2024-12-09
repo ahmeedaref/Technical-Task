@@ -1,4 +1,4 @@
-import { IsString, IsNumber, IsEmail } from 'class-validator';
+import { IsString, IsNumber, IsMongoId } from 'class-validator';
 
 export class ProductDto {
   @IsString()
@@ -11,5 +11,6 @@ export class ProductDto {
   @IsString()
   category?: string;
   @IsString()
+  @IsMongoId()
   createdBy: string;
 }

@@ -105,7 +105,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTViZTQxODhhN2EyNDcxMTNjZmZiNSIsImVtYWlsIjoiYWhtZWRAZ21haWwuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzMzNzAwNjU0LCJleHAiOjE3MzM3MDQyNTR9.kYIBzaNb6s6aVflxwUljqmfNCufobkZ1obQikrFrkos",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTViZTQxODhhN2EyNDcxMTNjZmZiNSIsImVtYWlsIjoiYWhtZWRAZ21haWwuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzMzNzYwNTY5LCJleHAiOjE3MzM3NjQxNjl9.t6wxyMg_QNx3MH43ZFvA7RR8sW9HDl7O5btHI1VASU8",
 						"type": "text"
 					}
 				],
@@ -130,12 +130,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTViZTQxODhhN2EyNDcxMTNjZmZiNSIsImVtYWlsIjoiYWhtZWRAZ21haWwuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzMzNjg4MjcxLCJleHAiOjE3MzM2OTE4NzF9.iBjubb9N6jgUTtvn7zrFhfIo1gXnvu3trUOSpVqdl7c",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTViZTQxODhhN2EyNDcxMTNjZmZiNSIsImVtYWlsIjoiYWhtZWRAZ21haWwuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzMzNzYwNzY0LCJleHAiOjE3MzM3NjQzNjR9.mWOO2Dr3RwdTBh3bR1HyShd2TuyqgOfUH474zAkx-V0",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000/product/6755fc0dfd57c5c9ce1a520f",
+					"raw": "http://localhost:3000/product/67571016aaa66e365af3e45b",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -143,7 +143,7 @@
 					"port": "3000",
 					"path": [
 						"product",
-						"6755fc0dfd57c5c9ce1a520f"
+						"67571016aaa66e365af3e45b"
 					]
 				}
 			},
@@ -182,13 +182,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTViZTQxODhhN2EyNDcxMTNjZmZiNSIsImVtYWlsIjoiYWhtZWRAZ21haWwuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzMzNjg4NTkzLCJleHAiOjE3MzM2OTIxOTN9.0cVQBH_7Xf7qPDmwl1Tva9cJxrgmQTy8kBpLyQjlfIo",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTViZTQxODhhN2EyNDcxMTNjZmZiNSIsImVtYWlsIjoiYWhtZWRAZ21haWwuY29tIiwicm9sZSI6IkFkbWluIiwiaWF0IjoxNzMzNzYwOTc2LCJleHAiOjE3MzM3NjQ1NzZ9.i-tkD5RFivRvhuSNydqabpy8AfzeG54u3h2AkCtQ6-Y",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \r\n    \"price\":600\r\n}",
+					"raw": "{\r\n     \"description\": \"t-shrit black oversive\"\r\n   \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -196,7 +196,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/product/6755fc0dfd57c5c9ce1a520f",
+					"raw": "http://localhost:3000/product/67562da062928c287c187593",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -204,7 +204,7 @@
 					"port": "3000",
 					"path": [
 						"product",
-						"6755fc0dfd57c5c9ce1a520f"
+						"67562da062928c287c187593"
 					]
 				}
 			},

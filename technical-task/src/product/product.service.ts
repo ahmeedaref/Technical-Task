@@ -36,7 +36,8 @@ export class ProductService {
   }
 
   async findAllProduct(): Promise<productDocument[]> {
-    return this.productModel.find();
+    const prodeuct = this.productModel.find();
+    return this.productModel.find().populate('createdBy').exec();
   }
 
   async findOneProduct(id: string) {
@@ -44,7 +45,7 @@ export class ProductService {
     if (!product) {
       throw new BadRequestException('product not found');
     }
-    return product;
+    return this.productModel.findById(id).populate('createdBy').exec();
   }
 
   async deleteProduct(id: string) {
@@ -66,6 +67,6 @@ export class ProductService {
       throw new BadRequestException('product not found');
     }
 
-    return this.productModel.findById(id);
+    return (await this.productModel.findById(id)).populate('createdBy');
   }
 }
